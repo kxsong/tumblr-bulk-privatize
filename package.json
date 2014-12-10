@@ -1,9 +1,14 @@
 {
   "name": "tumblr-bulk-privatize",
   "version": "0.1.0",
+  "description": "A less drastic alternative to deleting your Tumblr account",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kxsong/tumblr-bulk-privatize"
   },
   "dependencies": {
     "body-parser": "^1.10.0",
