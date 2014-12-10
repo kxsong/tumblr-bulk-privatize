@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  a(href='logout') logout
+  form(method='POST' action='/run')
+    h1= "User: " + user
+    h2 1. Select blog
+    ul
+      each blog in blogs
+        li
+          label
+            input(type='radio', name='blog' value=blog.name required)
+            !{blog.name}: !{blog.posts} public posts
+    h2 2. Options
+    p
+      | skip the  
+      input(type='text' name='offset' size='5' value='0')
+      |  most recent posts (keep public)
+    input(type='submit' name='submit' value='3. Submit')
